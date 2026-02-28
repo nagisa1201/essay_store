@@ -1,0 +1,34 @@
+{
+  "required_fields": [
+    "task_summary",
+    "recommended_parameters",
+    "skill_calls",
+    "risk_notes"
+  ],
+  "field_examples": {
+    "task_summary": "简要说明本次焊接任务理解",
+    "recommended_parameters": {
+      "current_a": 130,
+      "voltage_v": 22.5,
+      "travel_speed_mm_s": 6.0,
+      "wire_feed_speed": "中"
+    },
+    "skill_calls": [
+      {
+        "name": "set_weld_mode",
+        "args": {
+          "mode": "MIG"
+        }
+      },
+      {
+        "name": "start_bead",
+        "args": {
+          "path_id": "P1"
+        }
+      }
+    ],
+    "risk_notes": [
+      "若弧光干扰强，建议降低曝光并增加滤波"
+    ]
+  }
+}
